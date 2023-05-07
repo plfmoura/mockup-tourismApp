@@ -31,7 +31,7 @@ function ServicePage(){
             <section className={style.guiaBranco}>
                 <div className={style.guiaContainer}>
                     <div className={style.guiaTexto}>
-                        <h3>Guias de Turismo</h3>
+                        <h3>Nossos Guias</h3>
                             <p>
                             Possuímos profissionais treinados e qualificados para acompanhar a sua viagem e 
                             transformar seu passeio na melhor experiência possível, digno de uma memória inesquecível.
@@ -56,7 +56,7 @@ function ServicePage(){
                          <img src="http://blog.aboutrio.com.br/wp-content/uploads/2015/09/feijoadap.jpg" alt="" />
                     </div>
                     <div className={style.guiaText}>
-                        <h3>Melhores Restaurantes</h3>
+                        <h3>A culinária selecionada</h3>
                             <p> 
                                 Em nossos passeios com parada para almoço, 
                                 você irá desfrutar do melhor da culinária carioca nos melhores restaurantes que o rio pode oferecer, prepare seu paladar.
@@ -76,7 +76,7 @@ function ServicePage(){
             <section className={style.guiaBranco}>
                 <div className={style.guiaContainer}>
                     <div className={style.guiaTexto}>
-                        <h3>Transporte</h3>
+                        <h3>Nosso conforto</h3>
                             <p> 
                               A Nossa frota possui veículos novos, confortáveis, totalmente legalizados e seguros. Nossos motoristas são treinados e capacitados. Buscamos você 
                               em seu hotel. Nós temos vans de passeio Mercedes Vito 7, uma variedade de 
@@ -100,7 +100,7 @@ function ServicePage(){
                         <img src="https://www.ilhagrande.com.br/wp-content/uploads/2015/06/passeio-barco-lopes-mendes-ilha-grande-41.jpg" alt="" />
                     </div>
                     <div className={style.guiaText}>
-                        <h3>Passeios de Barco</h3>
+                        <h3>Passeios pela região</h3>
                             <p> Trabalhamos com as melhores agências
                                 de turismo marinho com embarcações 100% seguras e com manutenção rigorosamente rígida 
                                 para seu maior conforto e segurança.

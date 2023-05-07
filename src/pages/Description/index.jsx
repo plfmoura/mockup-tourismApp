@@ -121,7 +121,7 @@ export default function Description() {
                     </p>
                   ))}
                 </div>
-                <div className={style.imersiveVideoContainer}>
+                {/* <div className={style.imersiveVideoContainer}>
                   <span>
                     Tenha uma experiência imersiva gratuita com visão em 360º:
                   </span>
@@ -131,7 +131,7 @@ export default function Description() {
                       setShow(true);
                     }}
                   />
-                </div>
+                </div> */}
                 <p
                   className={style.textDescription}
                   style={{
@@ -206,18 +206,6 @@ export default function Description() {
                         </div>
                       </div>
                     </div>
-                    <div className={style.teamRating}>
-                      <p style={{ display: "flex", alignItems: "center" }}>
-                        <AiFillStar style={{ fontSize: "20px" }} />{" "}
-                        {guide[index].rate} Avaliações
-                      </p>
-                      <p style={{ display: "flex", alignItems: "center" }}>
-                        <TfiMedallAlt
-                          style={{ color: "#2e99ff", fontSize: "20px" }}
-                        />{" "}
-                        {guide[index].level}
-                      </p>
-                    </div>
                     {/* Area do Auxiliar do guia */}
                     <div className={style.auxContainer}>
                       <img src={auxiliary[index].picture} />
@@ -241,18 +229,6 @@ export default function Description() {
                           </p>
                         </div>
                       </div>
-                    </div>
-                    <div className={style.teamRating}>
-                      <p style={{ display: "flex", alignItems: "center" }}>
-                        <AiFillStar style={{ fontSize: "20px" }} />{" "}
-                        {auxiliary[index].rate} Avaliações
-                      </p>
-                      <p style={{ display: "flex", alignItems: "center" }}>
-                        <TfiMedallAlt
-                          style={{ color: "aqua", fontSize: "20px" }}
-                        />{" "}
-                        {auxiliary[index].level}
-                      </p>
                     </div>
                     {/* Area do fotografo */}
                     <div className={style.photoContainer}>

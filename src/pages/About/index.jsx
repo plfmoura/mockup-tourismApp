@@ -66,7 +66,7 @@ export default function About() {
       <section className={style.firstSection}>
         <div className={style.description}>
           <article>
-            <h1>Detalhes da Azul Tour</h1>
+            <h1>Detalhes da Empresa</h1>
             <p>
               A nossa empresa atua no mercado desde 2023, sendo especializada em
               passeios turísticos em todo o Rio de Janeiro. Prezamos pela
@@ -109,7 +109,7 @@ export default function About() {
             Ser reconhecida pelos nossos clientes, equipe e fornecedores como
             agência de viagens com inovação e alta tecnologia.
           </p>
-          <h2>Valores da Azul</h2>
+          <h2>Valores da empresa</h2>
           <p>
             Comprometimento com os nossos clientes, equipe e parceiros através:
             da confiabilidade pelos serviços prestados, da interação
@@ -145,10 +145,10 @@ export default function About() {
             <BsFillTelephoneFill /> +55 21 4002-8922
           </span>
           <span>
-            <AiOutlineMail /> azultour@gmail.com
+            <AiOutlineMail /> empresa@gmail.com
           </span>
           <span>
-            <BsInstagram /> @azulTourOficial
+            <BsInstagram /> @empresaOficial
           </span>
         </div>
         <form
@@ -185,35 +185,6 @@ export default function About() {
           </div>
           <Button type="submit" text="Enviar mensagem" />
         </form>
-      </section>
-      <section className={style.teamSection}>
-        <div className={style.alignCards}>
-          <h2 className={style.secondText}>
-            Conheça nossa equipe de Design, Marketing e Desenvolvimento de
-            Software.
-          </h2>
-          {devTeam ? (
-            <>
-              <CarouselTeam
-                setclass={style.carouselTeam}
-                children={devTeam.map((item) => {
-                  return (
-                    <TeamCard
-                      key={item.id}
-                      image={item.image}
-                      office={item.office}
-                      name={item.name}
-                    />
-                  );
-                })}
-              />
-            </>
-          ) : (
-            ""
-          )}
-        </div>
-        <span style={{ visibility: "hidden" }}>ver mais</span>
-        <img src="https://files.fm/thumb_show.php?i=kh5wzx5v5" />
       </section>
     </div>
   );
