@@ -39,10 +39,10 @@ export default function NavBar() {
           <div className={style.logoAlign}>
             <img
               src="azul.png"
-              alt="Logo da empresa Azul Turismo"
+              alt="Logo da empresa"
               className={style.navBarLogo}
             />
-            <span style={{ color: changeLogoColor }}>AZUL TOUR</span>
+            <span style={{ color: changeLogoColor }}>Empresa de Turismo</span>
           </div>
           <nav className={style.menuContainer}>
             <ul className={style.menuContent}>
