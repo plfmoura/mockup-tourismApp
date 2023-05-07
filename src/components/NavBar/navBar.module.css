@@ -1,0 +1,216 @@
+.alignContent {
+    width: 100vw;
+    height: 4rem;
+    position: sticky;
+    transition: all 200ms ease;
+    z-index: 999;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 5px .1rem;
+    user-select: none;
+}
+
+.navBarContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilização da div do logo e Logo */
+.logoAlign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.logoAlign span {
+    padding: 0 1rem 0 .5rem;
+    animation: title 2s ease-in;
+    position: relative;
+    z-index: 4;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #2ea9ff;
+}
+
+/* Animação do Logo */
+@keyframes title {
+    from {
+        transform: translateX(-1rem);
+        color: #c1c1c1;
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0rem);
+    }
+}
+
+.navBarLogo {
+    height: 3rem;
+    position: relative;
+    z-index: 5;
+    animation: transform 2.3s cubic-bezier(0.175, 0.885, 0.32, 1.25) normal;
+    display: block;
+}
+
+@keyframes transform {
+    0% {
+         transform: translateX(0rem) rotateZ(45deg);
+     };
+   
+     75% {
+         transform: translateX(10rem) rotateZ(45deg);
+     }
+ 
+     80% {
+         transform: translateX(10rem) rotateZ(45deg) scale(0.8);
+         opacity: 0;
+     }
+
+     85% {
+        transform: translateX(0rem) rotateX(405deg) scale(0.8);
+        opacity: 0;
+     }
+ 
+     100% {
+         transform: translateX(0rem) rotateZ(0deg);
+         opacity: 1;
+     }
+ 
+ }
+
+/* Listas de Navegação */
+.menuContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.menuContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 20rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Área do usuário */
+.userContainer .menuContent {
+    white-space: nowrap;
+    width: 18rem;
+    display: flex;
+}
+
+.userContainer .menuContent div {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.userPicture {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: .2rem;
+}
+
+.notificationAlign {
+    margin: auto 1.8rem auto 1rem;
+    position: relative;
+    background-color: yellow;
+    top: -1rem;
+    left: -.5rem    
+}
+
+.notificationIcon {
+    font-size: 1.8rem;
+    color: #333;
+    position: absolute;
+    z-index: 1;
+}
+
+.newPurchase {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+    top: -.1rem;
+    right: -2rem;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 1rem;
+    height: 1rem;
+    display: grid;
+    place-content: center;
+    border-radius: 100%;
+    color: #fff;
+    animation: newBuy 1s ease normal;
+}
+
+@keyframes newBuy {
+    from {
+        display: none;
+        transform: scale(0) translate3d(.5rem, 3rem, 15rem);
+    }
+    to {
+        transform: scale(1);
+        display: grid;
+    }
+}
+
+.menuMobile {
+    display: none;
+}
+
+@media screen and (min-width: 320px){
+    .navBarContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .menuContent {
+        display: none;
+    }
+    .userContainer .menuContent {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .menuMobile {
+        display: block;
+    }
+    .logoAlign span {
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .navBarContainer {
+        width: 95%;
+    }
+    .menuContent {
+        display: flex;
+    }
+    .logoAlign span {
+        display: block;
+    }
+    .userContainer .menuContent {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1040px){
+    .navBarContainer {
+        width: 80%;
+        margin: 0 auto;
+    }
+   
+}

@@ -1,0 +1,346 @@
+.paymentContainer {
+    margin-top: 2rem;
+    width: 100vw;
+    animation: motion 500ms ease normal;
+}
+
+@keyframes motion {
+    from {
+        transform: translateX(-200vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+.alignContainer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.headerContent {
+    margin-left: 5%;
+}
+
+.alignContainer .headerContent h2 span{
+    margin-right: 1rem;
+}
+
+.alignContainer .headerContent h2 {
+    display: flex;
+    align-items: center;
+} 
+
+.alignContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+        "a b"
+        "c b";
+    gap: 2rem;
+}
+
+.alignContent .paymentContent {
+    grid-area: a;
+}
+
+.alignContent .cartContent {
+    grid-area: b;
+    border: 1px solid #33333320;
+    border-radius: 20px;
+    height: 50%;
+    position: sticky;
+    top: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 5px;
+    animation: appears 1s cubic-bezier(0.215, 0.610, 0.355, 1) normal;
+}
+
+@keyframes appears {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.paymentContent .tipBanner {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #333;
+    border: 1px solid #33333320;
+    background-color: #fff;
+}
+
+.paymentContent .tipBanner p,
+.paymentContent .tipBanner {
+    margin-top: 1rem;
+}
+
+.paymentContainer .buyContent {
+    padding: 1rem 0rem;
+    margin: 1rem 0;
+}
+
+.paymentContainer .buyContent div {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* Span de Alterar informações do pedido */
+.paymentContainer .buyContent div span {
+    font-weight: bold;
+}
+
+.paymentContainer hr {
+    border: 1px solid #33333320;
+}
+
+.paymentContainer .couponContainer {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardContainer,
+.cardContainer h3 {
+    margin: 1rem 0 2rem 0;
+}
+
+.cardContainer {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+    min-height: 20rem;
+
+}
+
+.cardContainer .cardArea button {
+    margin-top: 1rem;
+    width: 85%;
+}
+
+.cartContent .tourHeader {
+    display: flex;
+    padding: 1rem;
+}
+
+.tourHeader div {
+    text-align: start;
+    margin-left: 1rem;
+}
+
+.cartContent .tourHeader img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.tourHeader h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.cartContent hr {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.cartContent .cartSecure {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.priceInfo {
+    width: 90%;
+    margin: 0 auto;
+}
+.priceInfo div {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 320px) {
+    .headerContent {
+        margin-left: 1%;
+    }
+
+    .alignContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .alignContent {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alignContent .paymentContent {
+        flex: 3;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .alignContent .cartContent {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: static;
+        top: 0rem;
+        margin-bottom: 5rem;
+    }
+
+    .cartContent .tourHeader img {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .tourHeader h3 {
+        font-size: 1rem;
+    }
+
+    .cardContainer,
+    .paymentMethodContainer  {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 580px) {
+    .headerContent {
+        margin-left: 3%;
+    }
+
+    .alignContent {
+        width: 80%;
+    }
+
+    .alignContent .paymentContent {
+        grid-area: a;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .alignContent .cartContent {
+        width: 30rem;
+        grid-area: b;
+        height: 100%;
+        margin: 0 auto;
+        position: static;
+        top: 0rem;
+        margin-bottom: 5rem;
+    }
+
+    .cartContent .tourHeader img {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .tourHeader h3 {
+        font-size: 2rem;
+    }
+
+    .cardContainer .cardArea {
+        width: 30rem;
+        margin: 0 auto;
+        grid-area: c;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .headerContent {
+        margin-left: 5%;
+    }
+
+    .alignContent {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+            "a b"
+            "c b";
+        gap: 2rem;
+    }
+
+    .alignContent .paymentContent {
+        grid-area: a;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .alignContent .cartContent {
+        grid-area: b;
+        width: 30rem;
+        height: 30rem;
+        position: sticky;
+        margin: 0 auto;
+        top: 5rem;
+    }
+
+    .cartContent .tourHeader img {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .tourHeader h3 {
+        font-size: 2rem;
+    }
+
+    .cardContainer .cardArea {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1288px) {
+    .headerContent {
+        margin-left: 10%;
+    }
+
+    .alignContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .alignContent {
+        width: 65rem;
+    }
+
+    .alignContent .paymentContent {
+        width: 30rem;
+    }
+    
+    .alignContent .cartContent {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .cartContent .tourHeader img {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .tourHeader h3 {
+        font-size: 2rem;
+    }
+
+    .cardContainer .cardArea {
+        width: 30rem;
+    }
+}

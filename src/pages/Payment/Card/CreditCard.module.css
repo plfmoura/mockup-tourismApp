@@ -1,0 +1,126 @@
+.cardContainer {
+  width: 100%;
+}
+
+.cardForm {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardPayment_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  margin: 0 auto;
+}
+
+.cardPaymentMethod_container {
+  animation: appears-qr 2s ease normal;
+}
+
+@keyframes appears-qr {
+    0%,75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cardForm input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  outline: none;
+  border: .1px solid #33333355;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 1px;
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.cardForm input:focus,
+.cardForm input:active {
+  border-color: #2ea9ff;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainContent input[name="name"],
+.bottom input[name="CPF"] {
+  width: 80%;
+}
+
+.mainContent input[name="expiry"],
+.bottom input[name="cvc"] {
+  width: 20%;
+  text-align: center;
+}
+
+.cardForm .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.bottom input[name="CPF"] {
+  width: 80%;
+}
+
+.submitArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .cardForm {
+    margin: auto;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardForm input {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .cardForm {
+    margin: 3rem auto auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardForm input {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,207 @@
+.footerContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 2rem 0rem 5rem 0rem;
+    color: #333;
+}
+
+.footerContainer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footerContainer h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.rodaList {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.rodaItem {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.listItem{
+    display: flex;
+    justify-content: center;
+}
+
+.rodaItem a{
+    text-decoration: none;
+    font-size: 15px;
+    list-style: none;
+    cursor: pointer;
+}
+
+/*diV do paragrafo final*/
+.textoFinal{
+    padding-top: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alignShotcuts {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.alignShotcuts p{
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.alignShotcuts .listaLink{
+    list-style-type: disc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+.alignShotcuts .listaLink li{
+    margin-inline-end: 2rem;
+    text-decoration: underline;
+}
+
+.socialFinal{
+    width: 22%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialItem a {
+    font-size: 25px;
+    margin-inline: .2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .footerContainer h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .rodaList {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .rodaList .rodaItem {
+        margin: 2rem auto;
+    }
+
+    .listaLink {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .alignShotcuts {
+        flex-direction: column;
+    }
+
+    .textoFinal,
+    .alignShotcuts,
+    .socialFinal,
+    .listaLink {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footerContainer h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .rodaList {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .rodaList .rodaItem {
+        margin: 2rem auto;
+    }
+    
+    .alignShotcuts {
+        flex-direction: column;
+    }
+
+    .listaLink {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .textoFinal,
+    .alignShotcuts,
+    .socialFinal,
+    .listaLink {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .listaLink {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .alignShotcuts {
+        flex-direction: column;
+    }
+
+    .textoFinal,
+    .socialFinal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        margin: 1rem auto;
+    }
+
+    .socialItem {
+        margin-top: 1rem;
+    }
+}

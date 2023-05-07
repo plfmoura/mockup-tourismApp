@@ -1,0 +1,55 @@
+.scroll-top-btn {
+    color: #2ea9ff;
+    background-color: #fff;
+    position: fixed;
+    z-index: 200;
+    bottom: 50px;
+    right: 50px;
+    display: grid;
+    font-size: 2.5rem;
+    border-radius: 100%;
+    place-content: center;
+    transform: rotateZ(-90deg);
+    cursor: pointer;
+}
+
+.scroll-top-btn:hover {
+    color: #2e88ff;
+}
+
+.in-scroll-btn {
+    animation: button-appears 300ms ease-in normal;
+}
+
+@keyframes button-appears {
+    from {
+        transform: translateX(100px) rotateZ(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px) rotateZ(-90deg);
+        opacity: 1;
+    }
+}
+
+.out-scroll-btn {
+    animation: button-hidden 300ms ease-in normal;
+}
+
+@keyframes button-hidden {
+    from {
+        transform: translateX(0px) rotateZ(-90deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100px) rotateZ(-90deg);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .scroll-top-btn {
+        bottom: 10px;
+        left: 10px;
+    }
+}
