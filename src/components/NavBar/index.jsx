@@ -42,7 +42,7 @@ export default function NavBar() {
               alt="Logo da empresa"
               className={style.navBarLogo}
             />
-            <span style={{ color: changeLogoColor }}>Empresa de Turismo</span>
+            <span style={{ color: changeLogoColor }}>Bookinsmart</span>
           </div>
           <nav className={style.menuContainer}>
             <ul className={style.menuContent}>
