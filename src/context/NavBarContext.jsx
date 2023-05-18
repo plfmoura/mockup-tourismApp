@@ -18,12 +18,12 @@ export const NavBarProvider = ({ children }) => {
   let changeBgColor = bgColor
     ? { backgroundColor: "#fff", fontWeight: "500" }
     : {
-        backgroundColor: "#ffffff55",
+        backgroundColor: "#ffffff99",
         fontWeight: "500",
         backdropFilter: "blur(5px)",
       };
-  let changeColor = bgColor ? "#333" : "#fff";
-  let changeLogoColor = bgColor ? "#2ea9ff" : "#fff";
+  let changeColor = bgColor ? "#333" : "#333";
+  let changeLogoColor = bgColor ? "#2ea9ff" : "#000";
   let changeNotficationIcon = bgColor ? "#333" : "#fff";
   let userNavBarBorder = bgColor ? 'rgba(0, 0, 0, 0.10) 0px 1px 1px .1rem' : 'none'
 

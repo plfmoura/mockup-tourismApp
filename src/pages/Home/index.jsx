@@ -13,6 +13,7 @@ import { NavBarContext } from "../../context/NavBarContext";
 import { LoggedContext } from "../../context/LoggedContext";
 import MobileSearchInput from "./SearchInput/MobileSearchInput";
 import TopButton from "./TopButton";
+import CarouselHeader from "./CarouselHeader";
 
 export default function Home() {
   const state = useSelector((state) => state);
@@ -54,7 +55,8 @@ export default function Home() {
   return (
     <div className={style.HomeContainer}>
       <TopButton />
-      <header className={style.background}>
+      <CarouselHeader />
+      {/* <header className={style.background}>
         <div className={style.titleContainer}>
           <p>Conheça o</p>
           <span>RIO</span>
@@ -64,7 +66,7 @@ export default function Home() {
         <div className={style.creativeContainer}>
           <img src={Men} alt="Criatvo Homem Rasgando a Tela" />
         </div>
-      </header>
+      </header> */}
       <section className={style.searchInputContainer}>
         { searchFixed ? <MobileSearchInput setFiltered={setFiltered} setMyRegion={setMyRegion} setShowTop={setShowTop} />
         : <SearchInput setFiltered={setFiltered} setMyRegion={setMyRegion} setShowTop={setShowTop} /> }

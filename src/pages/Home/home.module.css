@@ -1,26 +1,3 @@
-.background {
-    width: 100vw;
-    height: 35rem;
-    background: url('/src/assets/home/rio-beach-day.jpg') center;
-    background-position-y: 30%;
-    background-size: cover;
-    position: relative;
-    bottom: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    animation: home 700ms ease normal;
-}
-
-@keyframes home {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 .arrowAlign {
     background-color: red;
     color: red;

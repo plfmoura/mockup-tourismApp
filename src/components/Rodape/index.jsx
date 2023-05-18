@@ -65,7 +65,7 @@ export default function Rodape() {
           <CardsFlags />
         }
         <div className={styles.alignShotcuts} style={{justifyContent: alignPaymentShotcuts}}>
-          <p>&copy; 2023 Azul Turismo, inc.</p>
+          <p>&copy; 2023 Nome da Empresa, inc.</p>
           {!paymentFooter &&
             <ul className={styles.listaLink}>
               <li>
